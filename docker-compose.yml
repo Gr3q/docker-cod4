@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  cod4:
+    image: floyd0122/cod4server
+    environment:
+      - SERVERTYPE=2
+      - PORT=28960
+      - IP=0.0.0.0
+      - RCONPASSWORD=changeme
+      - AUTHORIZEMODE=-1
+      - MAXCLIENTS=30
+      - PUBNKBUSTER=0
+      - PASSWORD=changeme
+    ports:
+      - 28960:28960/udp
+      - 28960:28960/tcp
+    volumes:
+      - ./main:/home/cod4/main
+      - ./zone:/home/cod4/zone
