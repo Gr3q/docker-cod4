@@ -2,3 +2,4 @@ main/
 zone/
 Dockerfile
 docker-compose.yml
+docker-linux-server/

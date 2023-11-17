@@ -7,14 +7,13 @@ services:
       - SERVERTYPE=2
       - PORT=28960
       - IP=0.0.0.0
-      - RCONPASSWORD=changeme
-      - AUTHORIZEMODE=-1
+      - RCONPASSWORD=thisisasecurepassword
       - MAXCLIENTS=30
       - PUBNKBUSTER=0
-      - PASSWORD=changeme
+      - PASSWORD=netdumarocks
     ports:
-      - 28960:28960/udp
-      - 28960:28960/tcp
+      - 28970:28960/udp
+      - 28970:28960/tcp
     volumes:
       - ./main:/home/cod4/main
       - ./zone:/home/cod4/zone
